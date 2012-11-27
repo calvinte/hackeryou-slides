@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  Google HTML5 slide template
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Intro to jQuery</title>
+    <meta charset='utf-8'>
+    <script src='media/slides.js'></script>
+    <script src="media/jquery.js"></script>
+  </head>
+  <body style='display: none'>
+    <section class='slides layout-regular template-default'>
+      <article class='biglogo'>
+      </article>
+
+      <article>
+        <h1>Introduction to jQuery.</h1>
+        <p>
+          Calvin Tennant<br>
+          Nov 27, 2012
+        </p>
+      </article>
+
+      <article>
+        <h3>What is jQuery?</h3>
+        <p>A fast, concise, library that simplifies how to traverse HTML documents, handle events, perform animations, and server requests via AJAX.</p>
+        <p><code>$('#lets').begin().</code></p>
+      </article>
+
+      <article class='smaller'>
+        <h3>Conventions in jQuery.</h3>
+        <ul class="build">
+          <li><code>$();</code><br /> This is the jQuery function, it is short for <code>jQuery()</code>.</li>
+          <li><code>$('.selector');</code><br /> jQuery uses selectors, similar to those in CSS for traversing elements in the document.</li>
+          <li><code>$('.selector').fadeIn(250);</code><br /> Calling the <code>fadeIn()</code> method of our jQuery object.</li>
+          <li><code>$('.selector').click(function() { $(this).fadeOut(250) });</code><br /> Bind to the <code>click</code> event, call <code>fadeOut()</code> after the user clicks.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>What we're going to build with jQuery:</h3>
+        <iframe style="width: 100%; height: 80%" src="http://jsfiddle.net/calvintennant/Pv32w/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </article>
+
+      <article>
+        <h3>Let's look at the code.</h3>
+        <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/calvintennant/GzP8X/0/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        <p class="smaller">Set up our document and boilerplate code for generating images. (if you want to learn more about this, come to <a href="https://www.shoplocket.com/products/85c6d352365-crash-course-javascript-libraries"> Tomorrow's workshop</a>).</p>
+        <ul class="smaller">
+          <li>On the left hand side: set onDomReady, jQuery 1.8.2.</li>
+          <li>Paste the gist script into the HTML area.</li>
+          <li>Paste our boilerplate callback to generate our images.</li>
+          <li>Copy out the CSS</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Resize the images:</h3>
+        <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/calvintennant/GzP8X/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </article>
+
+      <article>
+        <h3>Select an active image:</h3>
+        <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/calvintennant/GzP8X/2/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </article>
+      
+      <article>
+        <h3>Move between active images:</h3>
+        <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/calvintennant/GzP8X/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </article>
+      
+      <article>
+        <h3>Make the application responsive and the highlighted images pop:</h3>
+        <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/calvintennant/GzP8X/5/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </article>
+
+      <article>
+        <h1>And, that's it.. questions?</h1>
+      </article>
+  </body>
+</html>
+
